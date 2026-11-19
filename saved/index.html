@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reading list — Zunalita</title>
+    <link rel="stylesheet" href="../assets/css/site.css">
+    <script type="module" src="../assets/js/pages/saved.js"></script>
+  </head>
+  <body>
+    <header>
+      <p><a href="../#stories">← The journal</a></p>
+      <h1><a href="../">Zunalita</a></h1>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="../#search">Search</a></li>
+          <li><a href="../create/">Write</a></li>
+          <li><a href="../about/">About</a></li>
+        </ul>
+      </nav>
+      <hr>
+    </header>
+
+    <main>
+      <h2>Your reading list</h2>
+      <p>Saved stories are kept in this browser only; they are not synced to an account.</p>
+      <p id="status" role="status" aria-live="polite"></p>
+      <button id="clear-list" type="button" hidden>Clear reading list</button>
+      <ul id="saved-list"></ul>
+      <p id="empty" hidden>
+        Nothing saved yet. Open a story and choose “Save for later”.
+        <a href="../#stories">Browse the journal</a>.
+      </p>
+      <noscript><p>Enable JavaScript to see this browser's saved stories.</p></noscript>
+    </main>
+  </body>
+</html>

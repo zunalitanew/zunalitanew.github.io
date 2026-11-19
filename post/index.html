@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Story — Zunalita</title>
+    <link rel="stylesheet" href="../assets/css/site.css">
+    <script type="module" src="../assets/js/pages/post.js"></script>
+  </head>
+  <body>
+    <header>
+      <p><a href="../#stories">← All stories</a></p>
+      <h1><a href="../">Zunalita</a></h1>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="../#search">Search</a></li>
+          <li><a href="../saved/">Reading list</a></li>
+          <li><a href="../create/">Write</a></li>
+          <li><a href="../about/">About</a></li>
+        </ul>
+      </nav>
+      <hr>
+    </header>
+
+    <main>
+      <p id="status" role="status" aria-live="polite">Loading story…</p>
+      <article id="story" hidden>
+        <p><a id="category" href="../#stories"></a></p>
+        <h2 id="title"></h2>
+        <p id="summary"></p>
+        <p id="byline"></p>
+        <p>
+          <button id="save-story" type="button" aria-pressed="false">Save for later</button>
+          <a href="../saved/">View reading list</a>
+        </p>
+        <div>
+          <button id="smaller" type="button" aria-label="Decrease text size">A−</button>
+          <button id="larger" type="button" aria-label="Increase text size">A+</button>
+          <button id="listen" type="button" aria-pressed="false">Listen</button>
+          <span id="reading-status" role="status" aria-live="polite"></span>
+        </div>
+        <hr>
+        <div id="body" class="story-content"></div>
+        <hr>
+        <p><button id="share" type="button">Share this story</button> <a id="source" href="https://github.com/zunalita/posts">View source</a></p>
+        <p>Discuss this story on <a href="https://github.com/zunalita/discussions">GitHub Discussions</a>.</p>
+        <p><a href="../#stories">← Back to all stories</a></p>
+      </article>
+      <noscript><p>Enable JavaScript to load this story from the archive.</p></noscript>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Write a story — Zunalita</title>
+    <link rel="stylesheet" href="../assets/css/site.css">
+    <script type="module" src="../assets/js/pages/editor.js"></script>
+  </head>
+  <body>
+    <header>
+      <p><a href="../#stories">← The journal</a></p>
+      <h1><a href="../">Zunalita</a></h1>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="../#search">Search</a></li>
+          <li><a href="../saved/">Reading list</a></li>
+          <li><a href="../about/">About</a></li>
+        </ul>
+      </nav>
+      <hr>
+    </header>
+
+    <main>
+      <h2>Write a story</h2>
+      <p>Write in Markdown. Your draft stays in this browser; nothing is sent to a server.</p>
+      <form id="editor">
+        <p><label for="title">Title</label><br><input id="title" maxlength="160" required></p>
+        <p><label for="author">Author (optional)</label><br><input id="author" maxlength="80"></p>
+        <p><label for="category">Category</label><br><input id="category" value="Essay" maxlength="50"></p>
+        <p><label for="tags">Tags, separated by commas (optional)</label><br><input id="tags" maxlength="160"></p>
+        <p><label for="content">Story (at least 300 characters)</label><br><textarea id="content" rows="18" required></textarea></p>
+        <p id="count">0 / 300 characters</p>
+        <p id="draft-status" role="status" aria-live="polite"></p>
+        <p>
+          <button id="download" type="button" disabled>Download Markdown</button>
+          <button id="clear" type="button">Clear draft</button>
+        </p>
+      </form>
+
+      <details open>
+        <summary>Preview</summary>
+        <h2 id="preview-title">Your title</h2>
+        <p id="preview-byline"></p>
+        <div id="preview-body" class="story-content"></div>
+      </details>
+
+      <p>To publish, add the downloaded file to the <a href="https://github.com/zunalita/posts">posts archive</a> and submit a pull request. This static editor never asks for GitHub credentials.</p>
+      <noscript><p>Enable JavaScript to use the editor.</p></noscript>
+    </main>
+  </body>
+</html>
